@@ -1,19 +1,20 @@
 {
-  "name": "telegram-bot-template",
+  "name": "kon-registration-bot",
   "type": "module",
   "version": "0.1.0",
   "private": true,
-  "description": "Telegram bot starter template",
+  "description": "KON registration bot",
   "imports": {
     "#root/*": "./build/src/*"
   },
-  "author": "deptyped <deptyped@gmail.com>",
+  "author": "",
   "license": "MIT",
   "engines": {
     "node": ">=20.0.0",
     "npm": ">=8.0.0"
   },
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "lint": "eslint .",
     "format": "eslint . --fix",
     "typecheck": "tsc",
