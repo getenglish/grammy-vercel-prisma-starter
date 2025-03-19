@@ -1,14 +1,13 @@
 #!/usr/bin/env tsx
 /* eslint-disable antfu/no-top-level-await */
 
-import type { PollingConfig, WebhookConfig } from '#root/config.js'
+import type { PollingConfig } from '#root/config.js'
 import type { RunnerHandle } from '@grammyjs/runner'
 import process from 'node:process'
 import { createBot } from '#root/bot/index.js'
 import { config } from '#root/config.js'
 import { logger } from '#root/logger.js'
 import { prisma } from '#root/prisma/index.js'
-import { createServer, createServerManager } from '#root/server/index.js'
 import { run } from '@grammyjs/runner'
 
 async function startPolling(config: PollingConfig) {
@@ -50,56 +49,8 @@ async function startPolling(config: PollingConfig) {
   })
 }
 
-async function startWebhook(config: WebhookConfig) {
-  const bot = createBot(config.botToken, {
-    config,
-    logger,
-    prisma,
-  })
-  const server = createServer({
-    bot,
-    config,
-    logger,
-  })
-  const serverManager = createServerManager(server, {
-    host: config.serverHost,
-    port: config.serverPort,
-  })
-
-  // graceful shutdown
-  onShutdown(async () => {
-    logger.info('Shutdown')
-    await serverManager.stop()
-  })
-
-  // connect to database
-  await prisma.$connect()
-
-  // to prevent receiving updates before the bot is ready
-  await bot.init()
-
-  // start server
-  const info = await serverManager.start()
-  logger.info({
-    msg: 'Server started',
-    url: info.url,
-  })
-
-  // set webhook
-  await bot.api.setWebhook(config.botWebhook, {
-    allowed_updates: config.botAllowedUpdates,
-    secret_token: config.botWebhookSecret,
-  })
-  logger.info({
-    msg: 'Webhook was set',
-    url: config.botWebhook,
-  })
-}
-
 try {
-  if (config.isWebhookMode)
-    await startWebhook(config)
-  else if (config.isPollingMode)
+  if (config.isPollingMode)
     await startPolling(config)
 }
 catch (error) {
