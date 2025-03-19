@@ -4,6 +4,7 @@
   "eslint.codeActionsOnSave.mode": "problems",
   "eslint.format.enable": true,
   "eslint.useFlatConfig": true,
+  "editor.formatOnSave": false,
   "[typescript]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
