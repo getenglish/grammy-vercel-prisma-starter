@@ -14,6 +14,9 @@ importers:
       '@grammyjs/commands':
         specifier: 1.0.5
         version: 1.0.5(grammy@1.35.0)
+      '@grammyjs/conversations':
+        specifier: ^2.0.1
+        version: 2.0.1(grammy@1.35.0)
       '@grammyjs/hydrate':
         specifier: 1.4.1
         version: 1.4.1(grammy@1.35.0)
@@ -399,6 +402,12 @@ packages:
     resolution: {integrity: sha512-7CiI63Ye5ysdqhwQV7cEFZGQOWJLDPJSoOAeIqI+SXIlwvTjqSRSlTG2e4OfhgF2t/3G3OdC5bPrZb7oQkYfBw==}
     peerDependencies:
       grammy: ^1.17.1
+
+  '@grammyjs/conversations@2.0.1':
+    resolution: {integrity: sha512-wpOXa4do03JeTVbv42CqsiWRczycey/58mccQekprhNZzJb/GL+/xSx0CSIDoaHm7x2MeGgtmBbpu9tGZQkqng==}
+    engines: {node: ^12.20.0 || >=14.13.1}
+    peerDependencies:
+      grammy: ^1.20.1
 
   '@grammyjs/hydrate@1.4.1':
     resolution: {integrity: sha512-xvd7XXoVHEhxBV2M8UHDRYkZlv32JioHfs+0l+eN34mkJJJBchuRDgRY3fkVJko8o1hGFHHLAJJTlEs2OAMolA==}
@@ -2250,6 +2259,10 @@ snapshots:
       grammy: 1.35.0
 
   '@grammyjs/commands@1.0.5(grammy@1.35.0)':
+    dependencies:
+      grammy: 1.35.0
+
+  '@grammyjs/conversations@2.0.1(grammy@1.35.0)':
     dependencies:
       grammy: 1.35.0
 
