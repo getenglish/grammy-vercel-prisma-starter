@@ -1,6 +1,7 @@
 import type { Context } from '#root/bot/context.js'
 import type { Config } from '#root/config.js'
 import type { Logger } from '#root/logger.js'
+import type { PrismaClientX } from '#root/prisma/index.js'
 import type { BotConfig } from 'grammy'
 import { greetingConversation } from '#root/bot/conversations/greeting.js'
 import { adminFeature } from '#root/bot/features/admin.js'
@@ -16,11 +17,13 @@ import { conversations } from '@grammyjs/conversations'
 import { hydrate } from '@grammyjs/hydrate'
 import { hydrateReply, parseMode } from '@grammyjs/parse-mode'
 import { sequentialize } from '@grammyjs/runner'
-import { MemorySessionStorage, Bot as TelegramBot } from 'grammy'
+import { PrismaAdapter } from '@grammyjs/storage-prisma'
+import { Bot as TelegramBot } from 'grammy'
 
 interface Dependencies {
   config: Config
   logger: Logger
+  prisma: PrismaClientX
 }
 
 function getSessionKey(ctx: Omit<Context, 'session'>) {
@@ -31,6 +34,7 @@ export function createBot(token: string, dependencies: Dependencies, botConfig?:
   const {
     config,
     logger,
+    prisma,
   } = dependencies
 
   const bot = new TelegramBot<Context>(token, botConfig)
@@ -40,6 +44,7 @@ export function createBot(token: string, dependencies: Dependencies, botConfig?:
     ctx.logger = logger.child({
       update_id: ctx.update.update_id,
     })
+    ctx.prisma = prisma
 
     await next()
   })
@@ -58,7 +63,7 @@ export function createBot(token: string, dependencies: Dependencies, botConfig?:
   protectedBot.use(hydrate())
   protectedBot.use(session({
     getSessionKey,
-    storage: new MemorySessionStorage(),
+    storage: new PrismaAdapter(prisma.session),
   }))
   protectedBot.use(i18n)
   protectedBot.use(conversations())
