@@ -69,6 +69,7 @@ export function createServer(dependencies: Dependencies) {
         return c.json({
           status: true,
           webhookUrl,
+          bot: (await bot.api.getMe()).username,
         })
       }
       c.status(500)
