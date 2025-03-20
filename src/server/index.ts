@@ -68,6 +68,7 @@ export function createServer(dependencies: Dependencies) {
         })
         return c.json({
           status: true,
+          webhookUrl,
         })
       }
       c.status(500)
