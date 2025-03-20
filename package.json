@@ -23,7 +23,7 @@
     "start": "tsc && tsx ./src/main.ts",
     "start:force": "tsx ./src/main.ts",
     "prepare": "husky || true",
-    "postinstall": "prisma generate"
+    "postinstall": "prisma generate --no-engine"
   },
   "dependencies": {
     "@grammyjs/auto-chat-action": "0.1.1",
