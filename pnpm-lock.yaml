@@ -10,25 +10,25 @@ importers:
     dependencies:
       '@grammyjs/auto-chat-action':
         specifier: 0.1.1
-        version: 0.1.1(grammy@1.35.0)
+        version: 0.1.1(grammy@1.35.1)
       '@grammyjs/commands':
         specifier: 1.0.5
-        version: 1.0.5(grammy@1.35.0)
+        version: 1.0.5(grammy@1.35.1)
       '@grammyjs/conversations':
         specifier: ^2.0.1
-        version: 2.0.1(grammy@1.35.0)
+        version: 2.0.1(grammy@1.35.1)
       '@grammyjs/hydrate':
         specifier: 1.4.1
-        version: 1.4.1(grammy@1.35.0)
+        version: 1.4.1(grammy@1.35.1)
       '@grammyjs/i18n':
         specifier: 1.1.2
-        version: 1.1.2(grammy@1.35.0)
+        version: 1.1.2(grammy@1.35.1)
       '@grammyjs/parse-mode':
         specifier: 1.11.1
-        version: 1.11.1(grammy@1.35.0)
+        version: 1.11.1(grammy@1.35.1)
       '@grammyjs/runner':
         specifier: 2.0.3
-        version: 2.0.3(grammy@1.35.0)
+        version: 2.0.3(grammy@1.35.1)
       '@grammyjs/storage-prisma':
         specifier: ^2.5.1
         version: 2.5.1
@@ -45,8 +45,8 @@ importers:
         specifier: 1.1.1
         version: 1.1.1
       grammy:
-        specifier: 1.35.0
-        version: 1.35.0
+        specifier: 1.35.1
+        version: 1.35.1
       hono:
         specifier: 4.7.4
         version: 4.7.4
@@ -154,13 +154,13 @@ packages:
     resolution: {integrity: sha512-Ed61U6XJc3CVRfkERJWDz4dJwKe7iLmmJsbOGu9wSloNSFttHV0I8g6UAgb7qnK5ly5bGLPd4oXZlxCdANBOWQ==}
     engines: {node: '>=6.9.0'}
 
-  '@babel/parser@7.26.9':
-    resolution: {integrity: sha512-81NWa1njQblgZbQHxWHpxxCzNsa3ZwvFqpUg7P+NNUU6f3UU2jBEg4OlF/J6rl8+PQGh1q6/zWScd001YwcA5A==}
+  '@babel/parser@7.26.10':
+    resolution: {integrity: sha512-6aQR2zGE/QFi8JpDLjUZEPYOs7+mhKXm86VaKFiLP35JQwQb6bwUE+XbvkH0EptsYhbNBSUGaUBLKqxH1xSgsA==}
     engines: {node: '>=6.0.0'}
     hasBin: true
 
-  '@babel/types@7.26.9':
-    resolution: {integrity: sha512-Y3IR1cRnOxOCDvMmNiym7XpXQ93iGDDPHx+Zj+NM+rg0fBaShfQLkg+hKPaZCEvg5N/LeCo4+Rj/i3FuJsIQaw==}
+  '@babel/types@7.26.10':
+    resolution: {integrity: sha512-emqcG3vHrpxUKTrxcblR36dcrcoRDvKmnL/dCL6ZsHaShW80qxCAcNhzQZrpeM765VzEos+xOi4s+r4IXzTwdQ==}
     engines: {node: '>=6.9.0'}
 
   '@clack/core@0.4.1':
@@ -1188,8 +1188,8 @@ packages:
   graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
 
-  grammy@1.35.0:
-    resolution: {integrity: sha512-Qlu5kVaekL4w5clWSpQcRxwJJoEeU13g8DTALuNbZsDAJuFJNXBuI8EqR6U1m1of7j9NEMQz59sXu+0/KsKjyg==}
+  grammy@1.35.1:
+    resolution: {integrity: sha512-6kNMODaXVj0R+dqYcHqMyjOURsCUFGvVkd7z/dDO1H1cqrGW/kyAFc4oETUKkcyUN/X80N0DchNVuc2JmTPxPQ==}
     engines: {node: ^12.20.0 || >=14.13.1}
 
   graphemer@1.4.0:
@@ -1533,8 +1533,8 @@ packages:
   ms@2.1.3:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
 
-  nanoid@3.3.8:
-    resolution: {integrity: sha512-WNLf5Sd8oZxOm+TzppcYk8gVOgP+l58xNy58D0nbUnOxOWRWvlcCV4kUF7ltmI6PsrLl/BgKEyS4mqsGChFN0w==}
+  nanoid@3.3.11:
+    resolution: {integrity: sha512-N8SpfPUnUp1bK+PMYW8qSWdl9U+wwNWI4QKxOYDy9JAro3WMX7p2OeVRF9v+347pnakNevPmiHhNmZ2HbFA76w==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
@@ -1685,8 +1685,8 @@ packages:
     resolution: {integrity: sha512-Q8qQfPiZ+THO/3ZrOrO0cJJKfpYCagtMUkXbnEfmgUjwXg6z/WBeOyS9APBBPCTSiDV+s4SwQGu8yFsiMRIudg==}
     engines: {node: '>=4'}
 
-  postcss@8.5.2:
-    resolution: {integrity: sha512-MjOadfU3Ys9KYoX0AdkBlFEF1Vx37uCCeN4ZHnmwm9FfpbsGWMZeBLMmmpY+6Ocqod7mkdZ0DT31OlbsFrLlkA==}
+  postcss@8.5.3:
+    resolution: {integrity: sha512-dle9A3yYxlBSrt8Fu+IpjGT8SY8hN0mlaA6GY8t0P5PjIOZemULz/E2Bnm/2dcUOena75OTNkHI76uZBNUUq3A==}
     engines: {node: ^10 || ^12 || >=14}
 
   prelude-ls@1.2.1:
@@ -2122,11 +2122,11 @@ snapshots:
 
   '@babel/helper-validator-identifier@7.25.9': {}
 
-  '@babel/parser@7.26.9':
+  '@babel/parser@7.26.10':
     dependencies:
-      '@babel/types': 7.26.9
+      '@babel/types': 7.26.10
 
-  '@babel/types@7.26.9':
+  '@babel/types@7.26.10':
     dependencies:
       '@babel/helper-string-parser': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
@@ -2311,38 +2311,38 @@ snapshots:
 
   '@fluent/langneg@0.6.2': {}
 
-  '@grammyjs/auto-chat-action@0.1.1(grammy@1.35.0)':
+  '@grammyjs/auto-chat-action@0.1.1(grammy@1.35.1)':
     dependencies:
-      grammy: 1.35.0
+      grammy: 1.35.1
 
-  '@grammyjs/commands@1.0.5(grammy@1.35.0)':
+  '@grammyjs/commands@1.0.5(grammy@1.35.1)':
     dependencies:
-      grammy: 1.35.0
+      grammy: 1.35.1
 
-  '@grammyjs/conversations@2.0.1(grammy@1.35.0)':
+  '@grammyjs/conversations@2.0.1(grammy@1.35.1)':
     dependencies:
-      grammy: 1.35.0
+      grammy: 1.35.1
 
-  '@grammyjs/hydrate@1.4.1(grammy@1.35.0)':
+  '@grammyjs/hydrate@1.4.1(grammy@1.35.1)':
     dependencies:
       abort-controller: 3.0.0
-      grammy: 1.35.0
+      grammy: 1.35.1
 
-  '@grammyjs/i18n@1.1.2(grammy@1.35.0)':
+  '@grammyjs/i18n@1.1.2(grammy@1.35.1)':
     dependencies:
       '@deno/shim-deno': 0.18.2
       '@fluent/bundle': 0.17.1
       '@fluent/langneg': 0.6.2
-      grammy: 1.35.0
+      grammy: 1.35.1
 
-  '@grammyjs/parse-mode@1.11.1(grammy@1.35.0)':
+  '@grammyjs/parse-mode@1.11.1(grammy@1.35.1)':
     dependencies:
-      grammy: 1.35.0
+      grammy: 1.35.1
 
-  '@grammyjs/runner@2.0.3(grammy@1.35.0)':
+  '@grammyjs/runner@2.0.3(grammy@1.35.1)':
     dependencies:
       abort-controller: 3.0.0
-      grammy: 1.35.0
+      grammy: 1.35.1
 
   '@grammyjs/storage-prisma@2.5.1': {}
 
@@ -2541,7 +2541,7 @@ snapshots:
 
   '@vue/compiler-core@3.5.13':
     dependencies:
-      '@babel/parser': 7.26.9
+      '@babel/parser': 7.26.10
       '@vue/shared': 3.5.13
       entities: 4.5.0
       estree-walker: 2.0.2
@@ -2554,14 +2554,14 @@ snapshots:
 
   '@vue/compiler-sfc@3.5.13':
     dependencies:
-      '@babel/parser': 7.26.9
+      '@babel/parser': 7.26.10
       '@vue/compiler-core': 3.5.13
       '@vue/compiler-dom': 3.5.13
       '@vue/compiler-ssr': 3.5.13
       '@vue/shared': 3.5.13
       estree-walker: 2.0.2
       magic-string: 0.30.17
-      postcss: 8.5.2
+      postcss: 8.5.3
       source-map-js: 1.2.1
 
   '@vue/compiler-ssr@3.5.13':
@@ -3184,7 +3184,7 @@ snapshots:
 
   graceful-fs@4.2.11: {}
 
-  grammy@1.35.0:
+  grammy@1.35.1:
     dependencies:
       '@grammyjs/types': 3.19.0
       abort-controller: 3.0.0
@@ -3680,7 +3680,7 @@ snapshots:
 
   ms@2.1.3: {}
 
-  nanoid@3.3.8: {}
+  nanoid@3.3.11: {}
 
   natural-compare@1.4.0: {}
 
@@ -3839,9 +3839,9 @@ snapshots:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
 
-  postcss@8.5.2:
+  postcss@8.5.3:
     dependencies:
-      nanoid: 3.3.8
+      nanoid: 3.3.11
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
