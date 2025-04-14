@@ -36,8 +36,8 @@ importers:
         specifier: 3.19.0
         version: 3.19.0
       '@hono/node-server':
-        specifier: 1.14.0
-        version: 1.14.0(hono@4.7.5)
+        specifier: 1.14.1
+        version: 1.14.1(hono@4.7.5)
       '@prisma/client':
         specifier: ^6.6.0
         version: 6.6.0(prisma@6.5.0(typescript@5.8.3))(typescript@5.8.3)
@@ -464,8 +464,8 @@ packages:
   '@grammyjs/types@3.19.0':
     resolution: {integrity: sha512-N0MS+RJG+AGSNuka1GWVj88oyK1oti4I0eQq6jGo4hic3P9MwFfnHjGQuIExZ3tlJUrZYwC/T7gk4Tu3+guJyg==}
 
-  '@hono/node-server@1.14.0':
-    resolution: {integrity: sha512-YUCxJwgHRKSqjrdTk9e4VMGKN27MK5r4+MGPyZTgKH+IYbK+KtYbHeOcPGJ91KGGD6RIQiz2dAHxvjauNhOS8g==}
+  '@hono/node-server@1.14.1':
+    resolution: {integrity: sha512-vmbuM+HPinjWzPe7FFPWMMQMsbKE9gDPhaH0FFdqbGpkT5lp++tcWDTxwBl5EgS5y6JVgIaCdjeHRfQ4XRBRjQ==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
       hono: ^4
@@ -2452,7 +2452,7 @@ snapshots:
 
   '@grammyjs/types@3.19.0': {}
 
-  '@hono/node-server@1.14.0(hono@4.7.5)':
+  '@hono/node-server@1.14.1(hono@4.7.5)':
     dependencies:
       hono: 4.7.5
 
